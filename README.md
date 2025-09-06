@@ -6,7 +6,7 @@ This script removes the old account and restarts the tailscale service promting 
 You must run this as an admin in Powershell. if the script does not work, open it in notepad and manually paste it in an admin powershell window
 
 Here is the content of the script:
-
+```
 $serviceName = "Tailscale"
 $folderPath = "C:\ProgramData\Tailscale"
 
@@ -32,4 +32,4 @@ if ((Get-Service -Name $serviceName).Status -eq 'Stopped') {
 } else { 
     Write-Host "Failed to stop the service. Aborting operation."
 }
-
+```
